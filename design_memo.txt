@@ -1,0 +1,25 @@
+How did recursive insertion work?
+
+In this assignment, I learned how recursive insertion works in a binary tree. The insert() method starts at the root and checks if the current employee is the manager I am looking for.
+If it finds the manager, it checks whether the left or right side is available. If the space is open, a new EmployeeNode is created and added there. 
+If the manager is not the current node, the method calls itself again to search through the left and right sides of the tree.
+This continues until the correct manager is found.
+
+
+What challenges did I face when finding the right spot for a new employee?
+
+One challenge I had was building the binary tree in the correct order. 
+At first, I was confused about who should be added first, who should be the manager, and which employee should go under each manager. 
+I also had to understand when an employee should be placed on the left or right side of the tree. 
+Recursion was confusing at first because the method calls itself while searching for the correct manager. 
+Testing the program step by step made the process easier to understand.
+I started with the team lead, added employees under that person, and then added more employees under other managers. 
+Printing the tree after adding employees also made it easier for me to see the hierarchy and check if everyone was placed in the correct position.
+
+When might trees be preferable to other data structures in real-world systems?
+
+I think trees are useful when information has a hierarchy. A company directory is a good example because employees can report to other employees. 
+I can also relate this to teams at work, where we may have managers, supervisors, and assistants at different levels. 
+A manager can be responsible for supervisors, and those supervisors can be responsible for other employees.
+This creates a structure similar to the tree we created in this assignment. Trees could also be useful for file systems, organization charts, and decision-making systems. 
+Compared with a regular list, a tree makes it easier to see who reports to whom and understand the relationships between different levels.
